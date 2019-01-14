@@ -1,0 +1,64 @@
+    <view id="body">
+    <view></view>
+        <view id="kuai">
+                  <view id="gn-wrap">
+            <view class="gn-kuai">
+                <navigator url="./kebiao/kebiao">
+                    <view>
+                        <image src="../../images/tzimg/rili.png" ></image>
+                        <view>课表</view>
+                    </view>
+                </navigator>
+            </view>
+            <view class="gn-kuai clear">
+                <view>
+                 <navigator url="../shezhi/shezhi">
+                    <image src="../../images/tzimg/shebei.png"></image>
+                    <view>设备信息</view>
+                 </navigator>
+                </view>
+            </view>
+            <view class="gn-kuai">
+                <view bindtap='scan'>
+                    <image src="../../images/tzimg/扫一扫.png" ></image>
+                    <view>扫一扫</view>
+                </view>
+            </view>
+            <view class="gn-kuai clear">
+                <view>
+                    <image src="../../images/tzimg/shuibiao.png"></image>
+                    <view>水电</view>
+                </view>
+            </view>
+            <view class="gn-kuai">
+                <view>
+                    <image src="../../images/tzimg/xszc.png"></image>
+                    <view>形势与政策</view>
+                </view>
+            </view>
+            <view class="gn-kuai clear">
+                <view>
+                    <image src="../../images/tzimg/jiaoshi.png"></image>
+                    <view>借用教室</view>
+                </view>
+            </view>
+            <view class="gn-kuai">
+                <view>
+                <navigator url='../phonelist/phonelist'>
+                    <image src="../../images/tzimg/phone.png"></image>
+                    <view>联系人</view>
+                </navigator>
+                </view>
+            </view>
+            <view class="gn-kuai clear">
+                <view>
+                    <image src="../../images/tzimg/feiyong.png"></image>
+                    <view>网费</view>
+                </view>
+            </view>
+
+        </view>
+        </view>
+    </view>
+
+

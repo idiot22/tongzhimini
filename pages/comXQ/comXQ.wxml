@@ -1,0 +1,12 @@
+
+        <image src="http://alpha.bnuz.edu.cn:8080/test/pic/{{SPPIC}}" class="imgone" />
+        <view class="xinxi">
+            <view class="name1">商品名称：{{SPMC}}</view>
+            <view class="baoming" bindtap="baoming">报名参加</view>
+            <view class="danwei">价格：{{SPJG}}元</view>
+            <view class="date">{{SPID}}</view>
+       </view>
+
+       <view class="wenben">
+              <text>{{SPXQ}}</text>
+       </view>

@@ -1,0 +1,75 @@
+{
+  "pages":[
+    "pages/competition/competition",
+   "pages/form/form",
+    "pages/fabu/fabu",
+    
+    "pages/login/login",
+        "pages/cinema/cinema",
+   
+   
+
+    "pages/movie/movie",
+    "pages/phonelist/phonelist",
+        "pages/lxrxq/lxrxq",
+        "pages/search/search",
+        "pages/shezhi/shezhi",
+        "pages/saoma/saoma",
+        "pages/cinema/tzxq/tzxq",
+        "pages/cinema/tzlist-zuixin/tzlist-zuixin",
+        "pages/cinema/tzlist/tzlist",
+        "pages/find/kebiao/kexq/kexq",
+        "pages/find/kebiao/kebiao",
+     
+        "pages/bangding/bangding",
+
+    "pages/comXQ/comXQ",
+    "pages/baominga/baominga",
+    "pages/homework/homework",
+     "pages/shiyan22/shiyan22",
+    "pages/baoming/baoming",
+    "pages/score/score",
+    "pages/mapid/mapid",
+    "pages/hs/hs",
+   
+    "pages/shiyan/shiyan",
+    "pages/chuancan/chuancan",
+    "pages/me/me",
+    "pages/find/find"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#63baa8",
+    "navigationBarTitleText": "电影",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#56acaf",
+    "backgroundColor": "#f5f5f5",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/competition/competition",
+      "text": "比赛",
+      "iconPath": "images/bar/bs2.png",
+      "selectedIconPath": "images/bar/bs1.png"
+    },{
+      "pagePath": "pages/cinema/cinema",
+      "text": "通知",
+      "iconPath": "images/bar/tz2.png",
+      "selectedIconPath": "images/bar/tz1.png"
+    },{
+      "pagePath": "pages/find/find",
+      "text": "日常",
+      "iconPath": "images/bar/rc2.png",
+      "selectedIconPath": "images/bar/rc1.png"
+    },{
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "images/bar/me2.png",
+      "selectedIconPath": "images/bar/me1.png"
+    }]
+  }
+}
+
+
+

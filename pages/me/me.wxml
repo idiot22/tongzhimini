@@ -1,0 +1,50 @@
+<!--pages/me/me.wxml-->
+<!-- <text>pages/me/me.wxml</text> -->
+        <view class="xinxi">
+            <view class="touxiang"><image class="tximg" src="../../images/mine/mine.jpg"></image></view>
+            <view class="hy">欢迎你！蒙奇.D.路飞</view>
+        </view>
+        <view class="tiao" >
+            <view class="one" bindtap="ditu" >
+                <view class="iconn"><image class="iconnimg" src="../../images/mine/1.png"></image></view>
+                <view class="ti">我的地图</view>
+                <view class="more"><image class="moreimg" src="../../images/mine/more.png"></image></view>
+            </view>
+            <view class="one">
+                    <view class="iconn"><image class="iconnimg" src="../../images/mine/2.png"></image></view>
+                    <view class="ti">我的比赛</view>
+                    <view class="more"><image class="moreimg" src="../../images/mine/more.png"></image></view>
+            </view>
+            <view class="one">
+                    <view class="iconn"><image class="iconnimg" src="../../images/mine/3.png"></image></view>
+                    <view class="ti">我的足迹</view>
+                    <view class="more"><image class="moreimg" src="../../images/mine/more.png"></image></view>
+            </view>
+            <view class="one">
+                    <view class="iconn"><image class="iconnimg" src="../../images/mine/4.png"></image></view>
+                    <view class="ti">我的考试</view>
+                    <view class="more"><image class="moreimg" src="../../images/mine/more.png"></image></view>
+            </view>
+          
+            <view class="one" bindtap="homework">
+                    <view class="iconn"><image class="iconnimg" src="../../images/mine/5.png"></image></view>
+                    <view class="ti">我的作业</view>
+                    <view class="more"><image class="moreimg" src="../../images/mine/more.png"></image></view>
+            </view>
+            <view class="one"  bindtap="score">
+                    <view class="iconn"><image class="iconnimg" src="../../images/mine/6.png"></image></view>
+                    <view class="ti">我的分数</view>
+                    <view class="more"><image class="moreimg" src="../../images/mine/more.png"></image></view>
+            </view>
+            <view class="one">
+                    <view class="iconn"><image class="iconnimg" src="../../images/mine/7.png"></image></view>
+                    <view class="ti">我的考勤</view>
+                    <view class="more"><image class="moreimg" src="../../images/mine/more.png"></image></view>
+            </view>
+                
+
+        </view>
+
+        <!-- <view class="footer">
+        
+        </view> -->

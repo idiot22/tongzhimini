@@ -1,0 +1,33 @@
+
+
+    <view class="top">
+        <view class="user">
+            <image src="../../images/tzimg/默认头像.png" class="avatar"></image>
+            <text class="name">
+            <text>卡卡西</text>
+            </text>
+            
+        </view>
+    </view>
+    <view class="menu">
+        <view class="item account"  no-cancel='true'>
+            <image src="../../images/tzimg/性别.png" class="icon"></image>
+            <text class="sub-title">性别：男</text>
+         </view>
+        <view class="item wallet" >
+            <image src="../../images/tzimg/职位.png" class="icon"></image>
+            <text class="sub-title">任职：第六代火影</text>
+        </view>
+    </view>
+    <view class="menu">
+        <view class="item fav" bindtap='tel'>
+            <image src="../../images/tzimg/电话.png" class="icon"></image>
+            <text class="sub-title">电话：13631285434</text>
+        </view>
+           <view class="item fav aa" >
+            <text class="sub-title number iconn">自定义:</text>
+            <input class="sub-title number" bindinput='callnumber' value=''></input>
+        </view>
+    </view>
+    <image src='../../images/tzimg/call.png' class="call" bindtap='call'></image>
+

@@ -1,0 +1,225 @@
+
+        <view class="fengetiao"></view>
+        <view class="fenlei">
+                <view class="s1" bindtap="onChangeShowState1" id="dayi" >
+                    <view class="s" bindtap="onChangeShowState1" id="dayi">大一</view>
+                </view>
+                <view class="s2" bindtap="onChangeShowState1" id="daer">    
+                    <view class="s" bindtap="onChangeShowState1" id="daer">大二</view>
+                </view>
+                <view class="s3">
+                    <view class="s">大三</view>
+                </view>
+                <view class="s4">
+                    <view class="s">大四</view>
+                </view>
+            </view>
+            <view class="fenge"></view>
+
+            <view class="yesornot">
+                    <view class="no" bindtap="onChangeShowState" id="food" >
+                        <view class="zhi" bindtap="onChangeShowState" id="food" >
+                            <view class="iconn"><image class="iconnimg" src="../../images/score/shang1.png" bindtap="onChangeShowState" id="food" ></image></view>
+                            <view class="ming" bindtap="onChangeShowState" id="food">上学期</view>
+                        </view>
+                    </view>
+                    <view class="yes"  bindtap="onChangeShowState" id="view">
+                        <view class="zhi" bindtap="onChangeShowState" id="view">
+                            <view class="iconn"><image class="iconnimg"  src="../../images/score/xia1.png"  bindtap="onChangeShowState" id="view"></image></view>
+                            <view class="ming"  bindtap="onChangeShowState" id="view">下学期</view>
+                        </view>
+                    </view>
+                </view>
+
+                <view class="z1" class="hide{{da1?'show':''}}">
+                <view class="allh1" class="hide{{showView1?'show':''}}">
+                    <view class="t">
+                        <view class="ic1"></view>
+                        <view class="left1">加权平均</view>
+                            <view class="right1">
+                                <view class="fen">分数：93</view>
+                                <view class="paiming">排名：1</view>
+                        </view>
+                    </view>
+                    <view class="t">
+                        <view class="ic1"></view>
+                        <view class="left1">高等数学</view>
+                        <view class="right1">
+                            <view class="fen">分数：98</view>
+                            <view class="paiming">排名：1</view>
+                        </view>
+                    </view>
+
+                    <view class="t">
+                            <view class="ic1"></view>
+                            <view class="left1">大学生就业指导</view>
+                            <view class="right1">
+                                <view class="fen">分数：83</view>
+                                <view class="paiming">排名：40</view>
+                            </view>
+                    </view>
+
+                    <view class="t">
+                            <view class="ic1"></view>
+                            <view class="left1">C语言程序设计</view>
+                            <view class="right1">
+                                <view class="fen">分数：88</view>
+                                <view class="paiming">排名：2</view>
+                            </view>
+                    </view>
+
+                    <view class="t">
+                            <view class="ic1"></view>
+                            <view class="left1">C语言程序设计</view>
+                            <view class="right1">
+                                <view class="fen">分数：88</view>
+                                <view class="paiming">排名：2</view>
+                            </view>
+                    </view>
+
+                </view>
+
+                <view class="allh2" class="hide{{showView2?'show':''}}">
+                        <view class="t">
+                            <view class="ic1"></view>
+                            <view class="left1">加权平均</view>
+                                <view class="right1">
+                                    <view class="fen">分数：90</view>
+                                    <view class="paiming">排名：2</view>
+                            </view>
+                        </view>
+                        <view class="t">
+                            <view class="ic1"></view>
+                            <view class="left1">高等数学下</view>
+                            <view class="right1">
+                                <view class="fen">分数：95</view>
+                                <view class="paiming">排名：3</view>
+                            </view>
+                        </view>
+    
+                        <view class="t">
+                                <view class="ic1"></view>
+                                <view class="left1">马克思</view>
+                                <view class="right1">
+                                    <view class="fen">分数：89</view>
+                                    <view class="paiming">排名：2</view>
+                                </view>
+                        </view>
+    
+                        <view class="t">
+                                <view class="ic1"></view>
+                                <view class="left1">网页设计与制作</view>
+                                <view class="right1">
+                                    <view class="fen">分数：99</view>
+                                    <view class="paiming">排名：1</view>
+                                </view>
+                        </view>
+    
+                        <view class="t">
+                                <view class="ic1"></view>
+                                <view class="left1">美术</view>
+                                <view class="right1">
+                                    <view class="fen">分数：92</view>
+                                    <view class="paiming">排名：1</view>
+                                </view>
+                        </view>
+    
+                    </view>
+                </view>
+
+            <view class="z2" class="hide{{da2?'show':''}}">
+
+                    <view class="allh1">
+                            <view class="t">
+                                <view class="ic1"></view>
+                                <view class="left1">加权平均111</view>
+                                    <view class="right1">
+                                        <view class="fen">分数：95</view>
+                                        <view class="paiming">排名：1</view>
+                                </view>
+                            </view>
+                            <view class="t">
+                                <view class="ic1"></view>
+                                <view class="left1">计算机基础</view>
+                                <view class="right1">
+                                    <view class="fen">分数：88</view>
+                                    <view class="paiming">排名：8</view>
+                                </view>
+                            </view>
+        
+                            <view class="t">
+                                    <view class="ic1"></view>
+                                    <view class="left1">英语</view>
+                                    <view class="right1">
+                                        <view class="fen">分数：85</view>
+                                        <view class="paiming">排名：30</view>
+                                    </view>
+                            </view>
+        
+                            <view class="t">
+                                    <view class="ic1"></view>
+                                    <view class="left1">网络</view>
+                                    <view class="right1">
+                                        <view class="fen">分数：88</view>
+                                        <view class="paiming">排名：2</view>
+                                    </view>
+                            </view>
+        
+                            <view class="t">
+                                    <view class="ic1"></view>
+                                    <view class="left1">C哈哈哈</view>
+                                    <view class="right1">
+                                        <view class="fen">分数：88</view>
+                                        <view class="paiming">排名：2</view>
+                                    </view>
+                            </view>
+        
+                        </view>
+        
+                        <view class="allh2">
+                                <view class="t">
+                                    <view class="ic1"></view>
+                                    <view class="left1">加权平均</view>
+                                        <view class="right1">
+                                            <view class="fen">分数：90</view>
+                                            <view class="paiming">排名：2</view>
+                                    </view>
+                                </view>
+                                <view class="t">
+                                    <view class="ic1"></view>
+                                    <view class="left1">高等数学下</view>
+                                    <view class="right1">
+                                        <view class="fen">分数：95</view>
+                                        <view class="paiming">排名：3</view>
+                                    </view>
+                                </view>
+            
+                                <view class="t">
+                                        <view class="ic1"></view>
+                                        <view class="left1">马克思</view>
+                                        <view class="right1">
+                                            <view class="fen">分数：89</view>
+                                            <view class="paiming">排名：2</view>
+                                        </view>
+                                </view>
+            
+                                <view class="t">
+                                        <view class="ic1"></view>
+                                        <view class="left1">网页设计与制作</view>
+                                        <view class="right1">
+                                            <view class="fen">分数：99</view>
+                                            <view class="paiming">排名：1</view>
+                                        </view>
+                                </view>
+            
+                                <view class="t">
+                                        <view class="ic1"></view>
+                                        <view class="left1">美术</view>
+                                        <view class="right1">
+                                            <view class="fen">分数：92</view>
+                                            <view class="paiming">排名：1</view>
+                                        </view>
+                                </view>
+            
+                            </view>
+            </view>

@@ -1,0 +1,43 @@
+<!--pages/fabu/fabu.wxml-->
+
+<form bindsubmit='formSubmit'>
+<view class="zhuce">发布信息</view>
+ <view class="input-area">
+      <view class="input-log">  
+        <!-- <image class="userinfo-logIcon" src="{{email}}"></image>   -->
+        <input id="username" name="username" maxlength='30' type="text" placeholder="信息标题 信息名称关键词" placeholder-class="placeholderStyle"/>
+      </view>
+      <view class="input-loga">
+        <!-- <image class="userinfo-logIcon" src="{{logIcon}}"></image>   -->
+        <input id="namea" name="namea" maxlength="100" placeholder="发布详情 描述一下你所发布的信息" placeholder-class="placeholderStyle"/>
+      </view>
+      
+      <view class="jiage">
+      <view class="jiagea">关键词</view>
+      <input class="jiainput"  maxlength="11" placeholder="请输入价格" placeholder-class="placeholderStyle" placeholder-style='text-align:right'/>
+      </view>
+
+      <view class="jiage">
+      <view class="jiagea">单位</view>
+      <input class="jiainput"  maxlength="11" placeholder="请输入单位" placeholder-class="placeholderStyle" placeholder-style='text-align:right'/>
+      </view>
+
+      <view class="jiage">
+      <view class="jiagea">分类</view>
+      <input class="jiainput"  maxlength="11" placeholder="商品分类" placeholder-class="placeholderStyle" placeholder-style='text-align:right'/>
+      </view>
+
+      <view class="photo" bindtap="chooseimage" >
+      <image src="../../images/fabu/add.png" class="addimg"/>
+      <view class="z">照片/视频</view>
+      </view>
+       <view class="photo"  >
+        <image src="{{tempFilePaths }}" mode="widthFix" style="width:100%" />
+      </view>
+
+      <view class="a"></view>
+    </view>
+    <view class="btn-area">
+        <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo"  disabled="{{disabled}}" style="background-color:{{loginBtnBgBgColor}}"  formType="submit"  loading="" class="butt">发布</button>
+    </view>
+</form>

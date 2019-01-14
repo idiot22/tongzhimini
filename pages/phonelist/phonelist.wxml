@@ -1,0 +1,34 @@
+
+<view class="weui-search-bar">
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input"  disabled='true' placeholder="搜索" bindtap="wxSearchTab"/>
+    </view>
+  </view>
+</view>
+<view>{{ searchValue}}</view>
+<view class="container log-list">
+<scroll-view scroll-y style="height:100%;white-space:nowrap;" scroll-into-view="{{toView}}" enable-back-to-top bindscroll="scroll" scroll-with-animation scroll-top="{{scrollTop}}">
+  <view class="list-group" wx:for="{{logs}}" wx:for-item="group">
+  <view wx:if="{{index}}>=1">
+    <view class="title" id="{{group.title}}">{{group.title}}</view>
+    <block wx:for="{{group.items}}" wx:for-item="user">
+    <navigator url='../lxrxq/lxrxq'>
+      <view id="" class="list-group-item">
+        <image class="icon" src="../../images/tzimg/默认头像.png" lazy-load="true"></image>
+        <text class="log-item">{{user.name}}</text>
+      </view>
+      </navigator>
+    </block>
+  </view>
+  </view>
+</scroll-view>
+  <!-- 侧边字母导航 -->
+  <view class="list-shortcut">
+    <block wx:for="{{logs}}">
+      <text class="{{currentIndex===index?'current':''}}" data-id="{{item.title}}" bindtap='scrollToview'>{{item.title}}</text>
+    </block>
+  </view>
+
+</view>

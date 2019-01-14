@@ -1,0 +1,41 @@
+<form bindsubmit="formSubmit" bindreset = "formReset">
+  <view class="content">
+     <view class='hr'></view>
+      <view class="touxiang">
+          <open-data type="userAvatarUrl"></open-data>
+      </view>
+ 
+    <view class='item'>
+    <view class='logo'>
+      <image src="../../images/tzimg/head.png"></image>
+    </view>
+      <input type='text' name='loginName'   placeholder-class='holder' bindblur='accountblur'></input>
+    </view>
+    <view class='item flex'>
+      <view class='logo'>
+        <image src="../../images/tzimg/pwd.png"></image>
+      </view>
+      <input type=' passWord '  password name='password' placeholder='' placeholder-class='holder'></input>
+    </view>
+    <button class='btn' type='default' form-type='submit'>登录</button>
+    <view class="foot">
+        <input type="checkbox">记住密码</input>
+        <view class="wjpwd">忘记密码?</view>
+    </view>
+
+
+        <!--遮罩弹出框-->
+    <view id="mask" style='display:{{tcshow}}'>
+        </view>
+        <view id="check" style='display:{{tcshow}}'>
+            <view>
+                <text class="que">登录失败</text>
+            </view>
+            <text class="wen">用户名或密码错误，请重新填写！ </text>
+            <view>
+                <view class="button2 no" bindtap='tanchu'>确定</view>
+            </view>
+        </view>
+  </view>
+</form>
+

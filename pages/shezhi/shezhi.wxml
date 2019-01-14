@@ -1,0 +1,38 @@
+
+    <view class="top">
+        <view class="user">
+            <image src="../../images/tzimg/shebeibg.png" class="avatar"></image>
+            <text class="name">设备信息</text>
+        </view>
+    </view>
+    <view class="menu">
+        <view class="item account" bindtap="showxh" no-cancel='true'>
+            <image src="../../images/tzimg/手机.png" class="icon"></image>
+            <text class="sub-title">手机型号</text>
+         </view>
+        <view class="item wallet" bindtap="showPx">
+            <image src="../../images/tzimg/see.png" class="icon"></image>
+            <text class="sub-title">设备像素比</text>
+        </view>
+    </view>
+    <view class="menu">
+        <view class="item fav" bindtap="showWidth">
+            <image src="../../images/tzimg/适应宽-新.png" class="icon"></image>
+            <text class="sub-title">窗口宽度</text>
+        </view>
+        <view class="item comment" bindtap="showHeight">
+            <image src="../../images/tzimg/高度.png" class="icon"></image>
+            <text class="sub-title">窗口高度</text>
+               </view>
+    </view>
+    <view class="menu">
+        <view class="item feedback" bindtap="showYu">
+            <image src="../../images/tzimg/自然语言处理.png" class="icon"></image>
+            <text class="sub-title">语言</text>
+             </view>
+        <view class="item about" bindtap="showAbout">
+            <image src="../../images/tzimg/版本.png" class="icon"></image>
+            <text class="sub-title">微信版本号</text>
+        </view>
+    </view>
+

@@ -1,0 +1,451 @@
+/* pages/movie/movie.wxss */
+.body
+{
+  /* min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto; */
+  font-size:0.8em
+}
+.tou
+{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    color: white;
+    line-height: 2rem;
+    z-index: 10000;
+    background: -webkit-linear-gradient(left, #bbd286 , #38627c); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #bbd286, #38627c); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #bbd286, #38627c); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #cff09f , #01bea6); /* 标准的语法 */
+    background: linear-gradient(to right, #bae7ae , #01bea6);
+    background: linear-gradient(to right, #48d8bf ,#47cbcd,#47cbcd, #429fdc);
+    background: linear-gradient(to right, #d3e4ad , #4c86aa);
+    
+    background:-webkit-linear-gradient(left,#48cba4, #45b9ab,#43a7b3);
+    background: linear-gradient(to right, #bfd097, #43a7b3);
+}
+.middler
+{
+   width:100%;
+   overflow:auto;
+   top:0rem;
+   position:absolute;
+   z-index:10;
+   bottom:4rem;
+}
+.swiper
+{
+  width:100%;
+  /* height: 170px; */
+  background: pink;
+}
+.slide-image
+{
+   width:100%;
+   height: 100%;
+}
+.ul-dao
+{
+    width: 100%;
+    height: 3rem;
+    margin:auto;
+    background:white;
+    border-bottom:1px solid #ebebeb; 
+    font-size: 1rem; 
+    font-family: '微软雅黑'; 
+    position: relative;
+}
+.ull
+{
+    display: block;
+    width: 95%;
+    height: 3rem;
+    /* background: #bbd286; */
+    margin:auto;
+    z-index: 10000;
+}
+.li-dao0
+{
+    width: 15%;
+    height: 3rem;
+    float: left;
+    list-style-type: none;
+    line-height: 3rem;
+    text-align: center;
+    /* margin-left: -1rem; */
+    position: relative;
+    /* background: #bbd286; */
+}
+.li-dao0:after
+{
+    content:"";
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to right, #bbd286 , #38627c);
+    position: absolute;
+    bottom:0%;
+    left:50%;
+    transition:all .8s;
+}
+.li-dao0:hover:after
+{
+    left:0%;
+    width:100%;
+}
+.li-dao1
+{
+    width: 15%;
+    height: 3rem;
+    float: left;
+    list-style-type: none;
+    line-height: 3rem;
+    text-align: center;
+    margin-left: 0.3rem;
+    position: relative;
+    /* background:yellow; */
+}
+.li-dao1:after
+{
+    content:"";
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to right, #38627c, #bbd286 );
+    position: absolute;
+    bottom:0%;
+    left:50%;
+    transition:all .8s;
+}
+.li-dao1:hover:after
+{
+    left:0%;
+    width:100%;
+}
+
+.li-dao2
+{
+    width: 15%;
+    height: 3rem;
+    float: left;
+    list-style-type: none;
+    line-height: 3rem;
+    text-align: center;
+    margin-left: 0.3rem;
+    position: relative;
+}
+.li-dao2:after
+{
+    content:"";
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to right, #bbd286 , #38627c);
+    position: absolute;
+    bottom:0%;
+    left:50%;
+    transition:all .8s;
+}
+.li-dao2:hover:after
+{
+    left:0%;
+    width:100%;
+}
+
+.li-dao3
+{
+    width: 15%;
+    height: 3rem;
+    float: left;
+    list-style-type: none;
+    line-height: 3rem;
+    text-align: center;
+    margin-left: 0.3rem;
+    position: relative;
+}
+.li-dao3:after
+{
+    content:"";
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to right, #38627c , #bbd286);
+    position: absolute;
+    bottom:0%;
+    left:50%;
+    transition:all .8s;
+}
+.li-dao3:hover:after
+{
+    left:0%;
+    width:100%;
+}
+
+.li-dao4
+{
+    width: 15%;
+    height: 3rem;
+    float: left;
+    list-style-type: none;
+    line-height: 3rem;
+    text-align: center;
+    margin-left: 0.3rem;
+    position: relative;
+}
+.li-dao4:after
+{
+    content:"";
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to right, #bbd286 , #38627c);
+    position: absolute;
+    bottom:0%;
+    left:50%;
+    transition:all .8s;
+}
+.li-dao4:hover:after
+{
+    left:0%;
+    width:100%;
+}
+
+.li-dao5
+{
+    width: 15%;
+    height: 3rem;
+    float: left;
+    list-style-type: none;
+    line-height: 3rem;
+    text-align: center;
+    margin-left: 0.3rem;
+    position: relative;
+}
+.li-dao5:after
+{
+    content:"";
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to right, #38627c , #bbd286);
+    position: absolute;
+    bottom:0%;
+    left:50%;
+    transition:all .8s;
+}
+.li-dao5:hover:after
+{
+    left:0%;
+    width:100%;
+}
+.fengetiao
+{
+    width: 100%;
+    height: 0.5rem;
+    background: linear-gradient(to right, #38627c , #bbd286);
+    background:rgb(221, 221, 221);
+    background: linear-gradient(to right, #38627c69 , #bbd2867c);
+    background:rgb(242, 242, 242);
+}
+.all
+{
+    width: 100%;
+    min-height: 100%;
+    margin-bottom: -5rem;
+}
+.all1
+{
+    width:100%;
+    display:block;
+}
+.all2
+{
+    width:100%;
+    display: none;
+}
+.out-in
+{
+    width: 100%;
+    height: 5rem;
+    /* background:pink; */
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    
+}
+.in
+{
+    width: 50%;
+    height: 5rem;
+    float: left;
+    /* margin-left: 3.33%; */
+    /* background:green; */
+    color: #b3b3b3;
+    font-size: 1rem;
+    text-align: center;
+    background:  rgba(233, 233, 233, 0.1);
+
+    
+}
+.out{
+    width: 50%;
+    height: 5rem;
+    float: left;
+    /* margin-left: 3.33%; */
+    /* background:green; */
+    color: #b3b3b3;
+    font-size: 1rem;
+    text-align: center;
+    
+    
+}
+.active {                         /*过度效果,就是你点击的时候,当前字体会有什么改变 */
+  transform: scale(1.1);
+  transform: all 2s;
+  /* border-bottom-style: solid;
+  border-bottom-color: #dcffdc;
+  border-bottom-width: 1px; */
+  color: #63baa8;
+}
+.iconn1
+{
+    width: 2rem;
+    height: 2rem;
+   
+    background-size: 100% 100%;
+    margin: auto;
+    margin-top: 6%;
+}
+.iconn2
+{
+    width: 1.9rem;
+    height: 1.9rem;
+   
+    background-size: 100% 100%;
+    margin: auto;
+    margin-top: 6%;
+}
+
+.fenlei1
+{
+    width: 100%;
+    /* height: 100rem; */
+    /* background:burlywood; */
+}
+.fenlei2
+{
+    width: 100%;
+    /* height: 100rem; */
+    /* background:rgb(198, 255, 184); */
+    display: none;
+}
+.imgone
+{
+    display: block;
+    width: 100%;
+}
+.xinxi
+{
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px solid #ebebeb;
+}
+.name1
+{
+    width: 60%;
+    height: 1.5rem;
+    color: #3f3f3f;
+    float: left;
+    margin-left: 3%;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    /* background: #999999; */
+}
+.baoming
+{
+    width: 18%;
+    height: 1.8rem;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 1.8rem;
+    background: #63baa8;
+    background: linear-gradient(to right, #bbd286 , #38627c); /* 标准的语法 */
+    background: linear-gradient(to right, #d3e4ad , #4c86aa);
+    background:#63baa8;
+    background:#63baa8;
+    color: white;
+    float: right;
+    margin-right: 3%;
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+}
+.danwei
+{
+    clear: both;
+    float: left;
+    width:50%;
+    height: 2rem;
+    color: #999999;
+    margin-left: 3%;
+    font-size: 0.9rem;
+    /* background: #01bea6; */
+}
+.date
+{
+    width:28%;
+    height: 1.5rem;
+    color: #999999;
+    float:left;
+    margin-left: 3.5rem;
+    font-size: 0.9rem;
+    margin-top:0.2rem;
+    /* background:pink; */
+    text-align: center;
+}
+
+.footer
+{
+    height:4rem;
+    line-height:4rem;
+    background:#ffff00;
+    width:100%;
+    position:fixed;
+    z-index:200;
+    bottom:0;
+    text-align:center;
+   
+}
+.s 
+{
+
+  width:4rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  float:left;
+  margin-left: 3rem;
+  text-align: center;
+  line-height: 2.5rem;
+  background: rgb(76, 153, 76);
+  color: white;
+  border-radius:10px;
+}
+.x
+{
+  width:4rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  float:right;
+  margin-right:3rem;
+  text-align: center;
+  line-height: 2.5rem;
+  background: rgb(76, 153, 76);
+  color: white;
+  border-radius:10px;
+}
+.hide{
+ display: none;
+}
+.show{ 
+ display: block;
+}

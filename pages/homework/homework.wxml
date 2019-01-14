@@ -1,0 +1,191 @@
+<view class='body'>
+        <view class="fengetiao"></view>
+        <view class="yesornot">
+            <view class="no" bindtap="onChangeShowState" id="food" > 
+                <view class="zhi" bindtap="onChangeShowState" id="food">
+                    <view class="iconn"><image class="iconnimg" src="../../images/homework/no.png" bindtap="onChangeShowState" id="food"></image></view>
+                    <view class="ming1" bindtap="onChangeShowState" id="food">未完成</view>
+                </view>
+            </view>
+            <view class="yes" bindtap="onChangeShowState" id="view" >
+                <view class="zhi" bindtap="onChangeShowState" id="view" > 
+                    <view class="iconn"><image class="iconnimg" src="../../images/homework/yes.png"  bindtap="onChangeShowState" id="view"></image></view>
+                    <view class="ming1" bindtap="onChangeShowState" id="view">已完成</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="allh1" class="hide{{showView1?'show':''}}">
+            <view class="tiao">
+                <view class="ic1"></view>
+                <view class="shu">
+                    <view class="name">phonegap程序设计</view>
+                    <view class="date">截至日期：今天</view>
+                </view>
+                <view class="tixing">
+                    <image class="tixingimg" src="../../images/homework/tixing.png"></image>
+                    <view class="tixingz">提醒</view>
+                </view>
+            </view>
+
+            <view class="tiao">
+                    <view class="ic1"></view>
+                    <view class="shu">
+                        <view class="name">计算机图像处理</view>
+                        <view class="date">截至日期：今天</view>
+                    </view>
+                    <view class="tixing">
+                        <image class="tixingimg" src="../../images/homework/tixing.png"></image>
+                        <view class="tixingz">提醒</view>
+                    </view>
+            </view>
+
+            <view class="tiao">
+                    <view class="ic1"></view>
+                    <view class="shu">
+                        <view class="name">计算机图像处理</view>
+                        <view class="date">截至日期：今天</view>
+                    </view>
+                    <view class="tixing">
+                        <image class="tixingimg" src="../../images/homework/tixing.png"></image>
+                        <view class="tixingz">提醒</view>
+                    </view>
+            </view>
+
+            <view class="tiao">
+                <view class="ic2"></view>
+                    <view class="shu">
+                        <view class="name">unity</view>
+                        <view class="date">截至日期：2018-12-01</view>
+                    </view>
+                    <view class="tixing">
+                        <image class="tixingimg" src="../../images/homework/tixing.png"></image>
+                        <view class="tixingz">提醒</view>
+                    </view>
+            </view>
+
+            <view class="tiao">
+                    <view class="ic2"></view>
+                        <view class="shu">
+                            <view class="name">unity</view>
+                            <view class="date">截至日期：2018-12-01</view>
+                        </view>
+                        <view class="tixing">
+                            <image class="tixingimg" src="../../images/homework/tixing.png"></image>
+                            <view class="tixingz">提醒</view>
+                        </view>
+            </view>
+
+            <view class="tiao">
+                <view class="ic3"></view>
+                    <view class="shu">
+                        <view class="name">光轨作业</view>
+                        <view class="date">截至日期：2018-01-01</view>
+                    </view>
+                    <view class="tixing">
+                        <image class="tixingimg" src="../../images/homework/tixing.png"></image>
+                        <view class="tixingz">提醒</view>
+                    </view>
+            </view>
+
+            <view class="tiao">
+                    <view class="ic3"></view>
+                        <view class="shu">
+                            <view class="name">光轨作业</view>
+                            <view class="date">截至日期：2018-01-01</view>
+                        </view>
+                        <view class="tixing">
+                            <image class="tixingimg" src="../../images/homework/tixing.png"></image>
+                            <view class="tixingz">提醒</view>
+                        </view>
+            </view>
+
+        </view>
+
+        <view class="allh2" class="hide{{showView2?'show':''}}">
+                <view class="tiao">
+                        <view class="ic3"></view>
+                        <view class="shu">
+                            <view class="name">微信小程序</view>
+                            <view class="date">提交日期：今天</view>
+                        </view>
+                        <view class="tixing2">
+                            <image class="tixingimg" src="../../images/homework/zuoye.png"></image>
+                            <view class="tixingz1">查看分数</view>
+                        </view>
+                    </view>
+        
+                    <view class="tiao">
+                            <view class="ic3"></view>
+                            <view class="shu">
+                                <view class="name">毛概实践</view>
+                                <view class="date">提交日期：今天</view>
+                            </view>
+                            <view class="tixing2">
+                                <image class="tixingimg" src="../../images/homework/zuoye.png"></image>
+                                <view class="tixingz1">查看分数</view>
+                            </view>
+                    </view>
+        
+                    <view class="tiao">
+                            <view class="ic3"></view>
+                            <view class="shu">
+                                <view class="name">unity</view>
+                                <view class="date">提交日期：今天</view>
+                            </view>
+                            <view class="tixing2">
+                                <image class="tixingimg" src="../../images/homework/zuoye.png"></image>
+                                <view class="tixingz1">查看分数</view>
+                            </view>
+                    </view>
+        
+                    <view class="tiao">
+                        <view class="ic3"></view>
+                            <view class="shu">
+                                <view class="name">计算机图像处理</view>
+                                <view class="date">提交日期：2018-12-01</view>
+                            </view>
+                            <view class="tixing2">
+                                <image class="tixingimg" src="../../images/homework/zuoye.png"></image>
+                                <view class="tixingz1">查看分数</view>
+                            </view>
+                    </view>
+        
+                    <view class="tiao">
+                            <view class="ic3"></view>
+                                <view class="shu">
+                                    <view class="name">unity</view>
+                                    <view class="date">提交日期：2018-12-01</view>
+                                </view>
+                                <view class="tixing2">
+                                    <image class="tixingimg" src="../../images/homework/zuoye.png"></image>
+                                    <view class="tixingz1">查看分数</view>
+                                </view>
+                    </view>
+        
+                    <view class="tiao">
+                        <view class="ic3"></view>
+                            <view class="shu">
+                                <view class="name">光轨作业</view>
+                                <view class="date">提交日期：2018-01-01</view>
+                            </view>
+                            <view class="tixing2">
+                                <image class="tixingimg" src="../../images/homework/zuoye.png"></image>
+                                <view class="tixingz1">查看分数</view>
+                            </view>
+                    </view>
+        
+                    <view class="tiao">
+                            <view class="ic3"></view>
+                                <view class="shu">
+                                    <view class="name">光轨作业</view>
+                                    <view class="date">提交日期：2018-01-01</view>
+                                </view>
+                                <view class="tixing2">
+                                    <image class="tixingimg" src="../../images/homework/zuoye.png"></image>
+                                    <view class="tixingz1">查看分数</view>
+                                </view>
+                    </view>
+            
+        </view>
+        </view>

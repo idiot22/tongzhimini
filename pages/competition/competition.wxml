@@ -1,0 +1,148 @@
+<view class='body'>
+<swiper indicator-dots="{{indicatorDots}}" 
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" class="swiper"> 
+      <block wx:for="{{arr}}" > 
+        <swiper-item> 
+            <image src="{{item}}" class="slide-image" mode="widthFix" /> 
+        </swiper-item> 
+      </block> 
+</swiper>
+
+        <view class="ul-dao">
+                <view class="ull">
+                    <text class="li-dao0" bindtap="onChangeShowState1" id="lidao1">最新</text>
+                    <text class="li-dao1" bindtap="onChangeShowState1" id="lidao2">最热</text>
+                    <text class="li-dao2">计算</text>
+                    <text class="li-dao3">机器</text>
+                    <text class="li-dao4">数学</text>
+                    <text class="li-dao5">摄影</text>
+                </view>
+        </view>
+            
+        <view class="fengetiao"></view>
+       
+       <view class="all1" class="hide{{lidaoshow1?'show':''}}">
+            
+                <view class="out-in">
+                        <view class="in" bindtap="onChangeShowState" id="food" >
+                            <view class="iconn1"><image class="iconn1" src="../../images/competition/inbian.png" bindtap="onChangeShowState" id="food"></image></view>
+                            <view bindtap="onChangeShowState" id="food">校内</view>
+                        </view>
+                        <view class="out" bindtap="onChangeShowState" id="view">
+                               <view class="iconn2"><image class="iconn1" src="../../images/competition/outbian.png" bindtap="onChangeShowState" id="view"></image></view>
+                        <view bindtap="onChangeShowState" id="view">校外</view>
+                    </view>
+                </view>
+               <view class="fenlei1" class="hide{{showView1?'show':''}}" >
+               
+               <view wx:for="{{list_data}}" wx:key="">
+                 <image src="../../images/competition/1.jpg" class="imgone" catchtap="onTouch"></image>
+                     <view class="xinxi">
+                         <view class="name1">商品名：{{item.SPMC}}</view>
+                         <view class="baoming">报名参加</view>
+                         <view class="danwei">库存：{{item.SPKC}}</view>
+                         <view class="date">2018-10-30</view>
+                    </view>
+                </view>
+              </view>
+
+              <view class="fenlei2" class="hide{{showView2?'show':''}}" >
+                
+                 <image src="../../images/competition/2.jpg" class="imgone" catchtap="onTouch"></image>
+                     <view class="xinxi">
+                         <view class="name1">商品名：{{item.SPMC}}</view>
+                         <view class="baoming">报名参加</view>
+                         <view class="danwei">库存：{{item.SPKC}}</view>
+                         <view class="date">2018-10-30</view>
+                    </view>
+
+                    <image src="../../images/competition/a.jpg" class="imgone" catchtap="onTouch"></image>
+                     <view class="xinxi">
+                         <view class="name1">商品名：{{item.SPMC}}</view>
+                         <view class="baoming">报名参加</view>
+                         <view class="danwei">库存：{{item.SPKC}}</view>
+                         <view class="date">2018-10-30</view>
+                    </view>
+
+                    <image src="../../images/competition/1.jpg" class="imgone" catchtap="onTouch"></image>
+                     <view class="xinxi">
+                         <view class="name1">商品名：{{item.SPMC}}</view>
+                         <view class="baoming">报名参加</view>
+                         <view class="danwei">库存：{{item.SPKC}}</view>
+                         <view class="date">2018-10-30</view>
+                    </view>
+               
+              </view>
+              
+                
+       </view>     
+            
+       <view class="all2" class="hide{{lidaoshow2?'show':''}}">
+        
+           <view class="out-in">
+                        <view class="in" bindtap="onChangeShowState" id="food" >
+                            <view class="iconn1"><image class="iconn1" src="../../images/competition/inbian.png"></image></view>
+                            <view>校内</view>
+                        </view>
+                        <view class="out" bindtap="onChangeShowState" id="view">
+                               <view class="iconn2"><image class="iconn1" src="../../images/competition/outbian.png"></image></view>
+                        <view>校外</view>
+                    </view>
+                </view>
+            <view class="fenlei1">
+                <image src="../../images/competition/a.jpg" class="imgone"></image>
+                <view class="xinxi">
+                    <view class="name1">北师摄影大赛</view>
+                    <view class="baoming">报名参加</view>
+                    <view class="danwei">发布单位：北京师范大学</view>
+                    <view class="date">2018-10-30</view>
+               </view>
+
+               <image src="../../images/competition/1.jpg" class="imgone"></image>
+                <view class="xinxi">
+                    <view class="name1">北师摄影大赛</view>
+                    <view class="baoming">报名参加</view>
+                    <view class="danwei">发布单位：北京师范大学</view>
+                    <view class="date">2018-10-28</view>
+               </view>
+
+               <image src="../../images/competition/a.jpg" class="imgone"></image>
+                <view class="xinxi">
+                    <view class="name1">北师摄影大赛</view>
+                    <view class="baoming">报名参加</view>
+                    <view class="danwei">发布单位：北京师范大学</view>
+                    <view class="date">2018-10-14</view>
+               </view>
+           </view>
+           
+           <view class="fenlei2">
+               <image src="../../images/competition/2.jpg" class="imgone"></image>
+               <view class="xinxi">
+                   <view class="name1">北师摄影大赛</view>
+                   <view class="baoming">报名参加</view>
+                   <view class="danwei">发布单位：北京师范大学</view>
+                   <view class="date">2018-10-30</view>
+              </view>
+
+              <image src="../../images/competition/1.jpg" class="imgone"></image>
+               <view class="xinxi">
+                   <view class="name1">北师摄影大赛</view>
+                   <view class="baoming">报名参加</view>
+                   <view class="danwei">发布单位：北京师范大学</view>
+                   <view class="date">2018-10-28</view>
+              </view>
+
+              <image src="../../images/competition/3.jpg" class="imgone"></image>
+               <view class="xinxi">
+                   <view class="name1">北师摄影大赛</view>
+                   <view class="baoming">报名参加</view>
+                   <view class="danwei">发布单位：北京师范大学</view>
+                   <view class="date">2018-10-14</view>
+              </view>
+
+           </view>
+
+       </view>
+       </view>
+    
+

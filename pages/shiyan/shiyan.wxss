@@ -1,0 +1,21 @@
+
+.top-line {
+  display: flex;
+  flex-flow: row;
+}
+ 
+.top-line-button {
+  font-size: 12px;   
+  color: #777;
+  margin: 5px;
+  padding: 10px;
+}
+ 
+.active {                         /*过度效果,就是你点击的时候,当前字体会有什么改变 */
+  transform: scale(1.45);
+  transform: all 2s;
+  border-bottom-style: solid;
+  border-bottom-color: #744646;
+  border-bottom-width: 2.5px;
+  color: #000;
+}

@@ -1,0 +1,93 @@
+/* pages/SP_list/SP_list.wxss */
+.ALL
+{
+  width:100%;
+  height: 500px;
+  background: rgb(243, 243, 243);
+}
+.one
+{
+  width:45%;
+  height: 200px;
+  background: rgb(206, 234, 243);
+  float: left;
+  margin-left: 0.8rem;
+  margin-top: 1rem;
+
+}
+.imga
+{
+  width:100%;
+  height: 75%;
+}
+.SP_name
+{
+  display: block;
+  width:100%;
+  height: 5%;
+  text-align: center;
+  color: blue;
+}
+.aaa
+{
+  width: 100%;
+  height: 40px;
+ 
+  margin-top: 10px;
+
+}
+.SP_jg
+{
+  display: block;
+  width:50%;
+  height: 20px;
+  float: left;
+  margin-left: 0px;
+  color: black;
+  font-size: 12px;
+ 
+}
+.SP_kc
+{
+  display: block;
+  width:70px;
+  height: 20px;
+  float: left;
+  margin-left: 0px;
+  color: black;
+   font-size: 12px;
+}
+.hhh
+{
+  width:100%;
+  height:3rem;
+  background: blue;
+  margin-bottom: 0;
+}
+.s 
+{
+
+  width:4rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  float:left;
+  margin-left: 3rem;
+  text-align: center;
+  line-height: 2.5rem;
+  background: rgb(76, 153, 76);
+  color: white;
+  border-radius:10px;
+}
+.x
+{
+  width:4rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  float:right;
+  margin-right:3rem;
+  text-align: center;
+  line-height: 2.5rem;
+  background: rgb(76, 153, 76);
+  color: white;
+  border-radius:10px;
+}

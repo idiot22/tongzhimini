@@ -1,0 +1,43 @@
+
+    <view class="bc">
+      <view class="bm">
+     
+        <form action="loding.html" name="input" method="get">
+         <!-- <input type="idcard" class="inputt" placeholder="身份证输入键盘" /> -->
+        
+           <view class="tableaaa">
+               <view class="heng">
+                   <view class="onel"><image src="../../images/baominga/2.png"/><view>姓名:</view></view>
+                   <view><input  type="text"  placeholder="请输入姓名" class="oner" /></view>
+                   
+               </view>
+               <view class="heng">
+                    <view class="onel"><image src="../../images/baominga/2.png"/><view>学号:</view></view>
+                    <view><input type="idcard" placeholder="请输入学号" class="oner"   /></view>
+                </view>
+                <view class="heng">
+                        <view class="onel"><image src="../../images/baominga/2.png"/><view>专业:</view></view>
+                        <view><input type="text" placeholder="请输入专业" class="oner"  /></view>
+                </view>
+                <view class="heng">
+                            <view class="onel"><image src="../../images/baominga/2.png"/><view>电话:</view></view>
+                            <view><input type="idcard" class="oner" placeholder="请输入电话"  /></view>
+                </view>
+                <view class="heng">
+                        <view class="onel"><image src="../../images/baominga/2.png"/><view>邮箱:</view></view>
+                        <view><input type="idcard" class="oner"  placeholder="请输入邮箱" /></view>
+                </view>
+                <view class="heng">
+                        <view class="onel1"><view>自我介绍:</view></view>
+                        <view><input type="text" class="oner" /></view>
+                </view>
+                <view>
+                        <view colspan="2" align="center"><input type="submit" value="确 认 提 交" class="tijiao" bindsubmit="return panduan()" /></view>
+                </view>
+
+           </view>
+        </form>
+
+    </view>
+
+    </view>

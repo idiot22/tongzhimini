@@ -1,0 +1,174 @@
+<view class="section">
+  <view class='left'>上传团队logo</view>
+  <view class='middle'>
+    <!--图片展示 -->
+    <view bindtap='upEwm' data-which='1'>
+      <image style='width:80rpx;height:80rpx;background-color:red;border-radius:50%' src='{{headImg}}'></image>
+    </view>
+  </view>
+  <view class='right'>></view>
+</view>
+ 
+ 
+<!--姓名  -->
+<view class="section">
+  <view class='left'>姓名</view>
+  <view class='middle'>
+    <!--input-->
+    <input type='text' name="name" placeholder='请输入姓名'></input>
+  </view>
+  <!-- <view class='right'>></view> -->
+</view>
+<!--公司 -->
+<view class="section" bindtap='selectCompany' >
+  <view class='left'>学校</view>
+  <view class='middle'>
+    <!--input-->
+    {{companySelected}}
+  </view>
+  <view class='right'>></view>
+</view>
+<!--职务  -->
+<view class="section">
+  <view class='left'>性别</view>
+  <view class='middle'>
+    <!--input-->
+    <input type='text' name="name" placeholder='性别'></input>
+  </view>
+  <!-- <view class='right'>></view> -->
+</view>
+
+<!--职务  -->
+<view class="section">
+  <view class='left'>年级</view>
+  <view class='middle'>
+    <!--input-->
+    <input type='text' name="name" placeholder='请输入年级'></input>
+  </view>
+  <view class='right'>></view>
+</view>
+ 
+<!--上传地区  -->
+<view class="section">
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      <view class='left'>参赛地</view>
+      <view class='middle'> {{region[0]}}-{{region[1]}}-{{region[2]}}</view>
+      <view class='right'>></view>
+    </view>
+  </picker>
+</view>
+ 
+<!--上传二维码  -->
+<view class="section">
+  <view class='left'>个人二维码</view>
+  <view class='middle'>
+    <!--图片展示 -->
+    <view bindtap='upEwm' data-which='2'>
+      <image style='width:80rpx;height:80rpx;background-color:red' src='{{ewmImg}}'></image>
+    </view>
+  </view>
+  <view class='right'>></view>
+</view>
+ 
+ 
+<!--裁剪图片浮层-->
+<view class='fixed-upimg' wx:if="{{imageFixed}}">
+  <view class="wx-content-info">
+    <!-- <view class="wx-content-info" wx:if="{{imageSrc}}"> -->
+    <view wx:if="{{isShowImg}}" class="wx-corpper" style="width:{{cropperInitW}}rpx;height:{{cropperInitH}}rpx;background:#000">
+      <view bindtap='upLoad' class="wx-corpper-content" style="width:{{cropperW}}rpx;height:{{cropperH}}rpx;left:{{cropperL}}rpx;top:{{cropperT}}rpx">
+        <image src="{{imageSrc}}" style="width:{{cropperW}}rpx;height:{{cropperH}}rpx"></image>
+        <view class="wx-corpper-crop-box" bindtouchstart="contentStartMove" bindtouchmove="contentMoveing" style="width:{{cutW}}rpx;height:{{cutH}}rpx;left:{{cutL}}rpx;top:{{cutT}}rpx">
+          <view class="wx-cropper-view-box">
+            <!-- <view class="wx-cropper-viewer">
+            <image src="{{imageSrc}}" style="width:{{cropperW}}rpx;height:{{cropperH}}rpx;left:{{cropperL - cutL}}rpx;top:{{cropperT - cutT}}rpx"></image>
+          </view> -->
+            <view class="wx-cropper-dashed-h"></view>
+            <view class="wx-cropper-dashed-v"></view>
+            <view class="wx-cropper-line-t" data-drag="top" catchtouchstart="dragStart" catchtouchmove="dragMove"></view>
+            <view class="wx-cropper-line-r" data-drag="right" catchtouchstart="dragStart" catchtouchmove="dragMove"></view>
+            <view class="wx-cropper-line-b" data-drag="bottom" catchtouchstart="dragStart" catchtouchmove="dragMove"></view>
+            <view class="wx-cropper-line-l" data-drag="left" catchtouchstart="dragStart" catchtouchmove="dragMove"></view>
+            <view class="wx-cropper-point point-t" data-drag="top" catchtouchstart="dragStart" catchtouchmove="dragMove"></view>
+            <view class="wx-cropper-point point-tr" data-drag="topTight"></view>
+            <view class="wx-cropper-point point-r" data-drag="right" catchtouchstart="dragStart" catchtouchmove="dragMove"></view>
+            <view class="wx-cropper-point point-rb" data-drag="rightBottom" catchtouchstart="dragStart" catchtouchmove="dragMove"></view>
+            <view class="wx-cropper-point point-b" data-drag="bottom" catchtouchstart="dragStart" catchtouchmove="dragMove"></view>
+            <view class="wx-cropper-point point-bl" data-drag="bottomLeft"></view>
+            <view class="wx-cropper-point point-l" data-drag="left" catchtouchstart="dragStart" catchtouchmove="dragMove"></view>
+            <view class="wx-cropper-point point-lt" data-drag="leftTop"></view>
+          </view>
+        </view>
+      </view>
+      <!-- <view class="wx-cropper-drag-box"></view> -->
+    </view>
+    <canvas canvas-id="myCanvas" style="position:absolute;border: 1px solid red; width:{{imageW}}rpx;height:{{imageH}}rpx;top:-9999px;left:-9999px;"></canvas>
+    <button type="primary" bindtap="getImageInfo" style="position:fixed;bottom:120rpx;width:90%;left:50%;transform:translate3d(-50%,0,0)"> 确认提交 </button>
+ 
+  </view>
+</view>
+ 
+ 
+<!--选择公司 -->
+<!--选择公司弹窗-->
+<view class="company_fixed_list" wx:if="{{dialogComapny}}">
+  <view class="company_new_fixed">
+    <view class="company_new_area">
+      <view class="line_x"></view>
+      <view class="company_lists" id="commend_list">
+        <!-- <li class="selected_css" id="selected_comp"></li> -->
+        <text class="comp {{beforeSelect == 1?'selected_css':''}}">{{companySelected}}</text>
+        <text data-num="{{index}}" data-company="{{item}}" class="comp {{_num == index?'selected_css':''}}" wx:for="{{companyList}}" bindtap="menuClick" >{{item}}</text>
+     
+      </view>
+      <view class="title_line_x">A-F</view>
+      <view class="company_lists" id="company_af">
+        <text class="comp">北京大学</text>
+        <text class="comp">清华大学</text>
+        <text class="comp">复旦大学</text>
+        <text class="comp">武汉大学</text>
+      </view>
+      <view class="title_line_x">G-L</view>
+      <view class="company_lists" id="company_gl">
+ 
+      </view>
+      <view class="title_line_x">M-R</view>
+      <view class="company_lists" id="company_mr">
+ 
+      </view>
+      <view class="title_line_x">S-Z</view>
+      <view class="company_lists" id="company_sz">
+        <text class="comp">北京大学</text>
+        <text class="comp">北京大学</text>
+        <text class="comp">北京大学</text>
+        <text class="comp">北京大学</text>
+        <text class="comp">北京大学</text>
+        <text class="comp">北京大学</text>
+      </view>
+      <view class="writer_input" bindtap='moreCompany' >找不到我的大学，点这里>></view>
+    </view>
+  </view>
+</view>
+<!---->
+ 
+<!--手动输入公司弹窗  -->
+<view class="write_dialog" wx:if="{{writeComapny}}" >
+  <view class="dialog-wrap">
+    <view class="dialog-mask"></view>
+    <view class="dialog-ct">
+      <view class="dialog-hd">手动输入</view>
+      <view class="dialog-bd">
+ 
+        <input type="text" bindinput="bindcomInput" name="text-company" maxlength="10" placeholder="请输入公司名字，10个字内"></input>
+ 
+      </view>
+      <view class="dialog-ft clearfix">
+        <button type="submit" class="phone-submit-btn" bindtap='subCompany' >确定</button>
+      </view>
+      <view class="dialog-close-btn" bindtap='close'>
+        <text class="i-close"></text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,154 @@
+/* pages/fabu/fabu.wxss */.zhuce
+{
+width: 100%;
+height: 2rem;
+color: #aaaaaa;
+text-align: center;
+line-height: 2rem;
+}
+.input-log
+{
+  width:90%;
+  height:2.6rem;
+  /* background: pink; */
+  margin:auto;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  display: flex;
+  align-items: center;
+  margin-top:0.4rem;
+  background: rgb(247, 247, 247);
+  border-radius: 10px;
+
+
+}
+.input-loga
+{
+  width:90%;
+  height:7rem;
+  /* background: pink; */
+  margin:auto;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  /* display: flex;
+  align-items: center; */
+  margin-top:0.4rem;
+  background: rgb(247, 247, 247);
+  border-radius: 10px;
+
+
+}
+.userinfo-logIcon
+{
+  width: 1.8rem;
+  height: 1.8rem;
+  /* background: yellow; */
+  float: left;
+  margin-left: 0.4rem;
+}
+.jiage
+{
+  width:90%;
+  height:2.6rem;
+  /* background: pink; */
+  margin:auto;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  display: flex;
+  align-items: center;
+  margin-top:0.4rem;
+  background: rgb(247, 247, 247);
+  border-radius: 10px;
+}
+.jiagea
+{
+  width: 4rem;
+  float: left;
+  color: rgb(163, 163, 163);
+  font-size: 0.9rem;
+  margin-left: 0.4rem;
+}
+.jiainput
+{
+  display: block;
+  width:5rem;
+  /* background: pink; */
+  float: left;
+  margin-left: 8rem;
+  text-align:right;
+}
+input
+{
+  font-size: 0.8rem;
+  width:90%;
+  margin-left: 0.3rem;
+}
+.placeholderStyle
+{
+  font-size: 0.7rem;
+  color: rgb(206, 206, 206);
+}
+.placeholderStylea{
+  
+}
+
+.photo
+{
+  width:5rem;
+  height:5rem;
+  /* margin:auto; */
+  float: left;
+  margin-left: 1rem;
+  background: rgb(247, 247, 247);
+  margin-top:1.3rem;
+  overflow: hidden;
+  
+}
+.addimg
+{
+  display: block;
+  width:1.6rem;
+  height: 1.6rem;
+  margin:auto;
+  margin-top:0.8rem;
+}
+.z 
+{
+  width:5rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 0.7rem;
+  color: rgb(163, 163, 163);
+  margin-top: 0.4rem;
+}
+.a {
+  clear: both;
+  width: 100%;
+  height: 1rem;
+  background: white;
+  /* background: pink; */
+}
+.btn-area
+{
+  clear: both;
+  width:18rem;
+  height: 2rem;
+  margin:auto;
+  /* margin-top: 2rem; */
+  color:white;
+  background: #43a7b3;
+   border-radius: 10px;
+  
+}
+button
+{
+   clear: both;
+  color: white;
+  border-radius: 10px;
+}
+.butt
+{
+   clear: both;
+  /* margin-top: 2rem; */
+  color: white;
+  border-radius: 10px;
+  background: #43a7b3;
+}

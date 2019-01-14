@@ -1,0 +1,46 @@
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+    <image src="../../images/form/yes.png"/>
+    <text></text>
+    <button bindtap="go" class="zccg">注册成功</button>
+</view>
+<form bindsubmit='formSubmit'>
+<view class="zhuce">报名参赛</view>
+ <view class="input-area">
+      <view class="input-log">  
+        <image class="userinfo-logIcon" src="{{email}}"></image>  
+        <input id="username" name="username" maxlength='30' type="text" placeholder="请输入您的常用邮箱作为登录名" placeholder-class="placeholderStyle"/>
+      </view>
+      <view class="input-log">
+        <image class="userinfo-logIcon" src="{{logIcon}}"></image>  
+        <input id="namea" name="namea" maxlength="11" placeholder="请填写真实姓名方便您发布需求提供者准确联系" placeholder-class="placeholderStyle"/>
+      </view>
+      <view class="input-log">
+        <image class="userinfo-logIcon" src="{{ni}}"></image>  
+        <input id="nameb" name="nameb"  maxlength="11" placeholder="昵称方便参与本网活动，不填写自动显示姓名 " placeholder-class="placeholderStyle"/>
+      </view>
+      <view class="input-log">
+        <image class="userinfo-logIcon" src="{{phone}}"></image>  
+        <input id="password" name="password" type="number" maxlength="11" placeholder=" 固定电话或手机号方便发布需求提供者准确联系" placeholder-class="placeholderStyle"/>
+      </view>
+      <view class="input-log">
+        <image class="userinfo-logIcon" src="{{pwdIcon}}"></image>  
+        <input id="mima" name="mima"  maxlength="16" placeholder="密码长度为6-16位仅限字母数字横线下划线 " placeholder-class="placeholderStyle" type="password"/>
+      </view>
+      <view class="input-log">
+        <image class="userinfo-logIcon" src="{{confirm}}"></image>  
+        <input id="mimab" name="mimab"  maxlength="16" placeholder="请再次输入密码 " placeholder-class="placeholderStyle" type="password"/>
+      </view>
+       <view class="input-log">
+        <image class="userinfo-logIcon" src="{{work}}"></image>  
+        <input id="work" name="work" type="number" maxlength="11" placeholder="请填写单位全称 " placeholder-class="placeholderStyle"/>
+      </view>
+
+    </view>
+    <view class="buttt">
+    <view class="btn-area">
+        <!-- <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo"  disabled="{{disabled}}" style="background-color:{{loginBtnBgBgColor}}"  formType="submit"  loading="{{btnLoading}}" bindtap="submit"> {{loginBtnTxt}} </button> -->
+        <button open-type="getUserInfo" lang="zh_CN"  disabled="{{disabled}}" style="background-color:{{loginBtnBgBgColor}}"  formType="submit"   > {{loginBtnTxt}} </button>
+    </view>
+    </view>
+</form>

@@ -1,0 +1,14 @@
+<view >
+ 
+    <view class="top-line">
+    <view class="top-line-button {{TopIndex == 0 ? 'active':''}} " data-index="0" 
+bindtap='changstyle'>发现</view>
+    <view class="top-line-button {{TopIndex == 1 ? 'active':''}} " data-index="1" 
+bindtap='changstyle'>关注</view>   
+    </view>
+ 
+  <view wx:if="{{TopIndex == 0}}"> 这里是发现</view>
+  <view  wx:if="{{TopIndex == 1}}"> aaaaa</view>
+ 
+ 
+</view>

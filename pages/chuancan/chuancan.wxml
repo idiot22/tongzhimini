@@ -1,0 +1,25 @@
+<view class="ALL">
+<view wx:for="{{list_data}}" wx:key="">
+<navigator url='/pages/SP_info/SP_info?'>
+<view class="one">
+<image src='http://alpha.bnuz.edu.cn:8088/test/pic/{{item.SPPIC}}' class="imga"></image>
+<text class="SP_name">商品名：{{item.SPMC}}</text>
+<view class="aaa">
+<view class="SP_jg">价格：{{item.SPJG}}</view>
+<view class="SP_kc">库存：{{item.SPKC}}</view>
+</view>
+</view>
+</navigator>
+</view>
+<view >
+<view class="s" bindtap="onclickb">上一页</view>
+<view class="x" bindtap="onclicka">下一页</view>
+</view>
+</view>
+
+
+
+
+
+
+

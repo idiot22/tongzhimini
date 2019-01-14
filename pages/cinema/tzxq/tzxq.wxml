@@ -1,0 +1,55 @@
+<!--pages/cinema/tzxq/tzxq.wxml-->
+
+   <!--图片-->
+    <section id="xq-img">
+    <image src='../../../images/tzimg/xqbg.jpg'></image>
+    </section>
+    <!--图片-->
+
+    <!--标题-->
+    <section id="xq-title">
+        <view id="title">
+            树莓的学生因为不堪大作业压力而集体上木铎天台
+        </view>
+        <view id="xqicon">
+            <view id="icon-kuai">
+                <view class="touxiang " id="tx">
+                   <image src='../../../images/tzimg/tzxqtx.jpg'></image>
+                </view>
+                <text>信院团委</text>
+            </view>
+            <view id="icon-kuai">
+                <view class="touxiang" id="time">
+                    <image src='../../../images/tzimg/time.png'></image>
+                </view>
+                <text>2018/12/20</text>
+            </view>
+            <view id="icon-kuai" style="position: absolute;right: 0.5em;">
+                <view class="touxiang" id="see">
+                    <image src='../../../images/tzimg/see.png'></image>
+                </view>
+                <text>200人</text>
+            </view>
+        </view>
+    </section>
+    <!--标题-->
+    <!--正文-->
+    <section id="wenzhang">
+        <view style="margin-top:1em"> 粉碎法克斯金牛哦认为u为黑九五七年没事厄瑞亲王解放军发多日军第三福萨蒂啊还是大蛇容器武汉我觉得父亲呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃奇特我换衣服巍峨恶气钱飞微微发热给如题如题
+        </view>
+        <view> 粉碎法克斯金牛哦认为u为黑九五七年没事厄瑞亲王解放军发多日军第三福萨蒂啊还是大蛇容器武汉我觉得父亲呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃奇特我换衣服巍峨恶气钱飞微微发热给如题如题
+        </view>
+        <view> 粉碎法克斯金牛哦认为u为黑九五七年没事厄瑞亲王解放军发多日军第三福萨蒂啊还是大蛇容器武汉我觉得父亲呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃奇特我换衣服巍峨恶气钱飞微微发热给如题如题
+        </view>
+    </section>
+    <!--按钮-->
+    <view style="margin-bottom: 6em">
+        <navigator url="tzxq">
+        <view class="btn">上一篇</view>
+        </navigator>
+        <navigator url="tzxq">
+        <view class="btn">下一篇</view>
+        </navigator>
+    </view>
+
+

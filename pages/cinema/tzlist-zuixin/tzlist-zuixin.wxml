@@ -1,0 +1,14 @@
+  <!--紧急通知-->
+  <view class="bargain-wrapper">
+    <view class="bargain-item" wx:for="{{bargainList}}" wx:key="*this" bindtap="goDetail">
+      <image class="bargain-img" src="{{item.img}}"></image>
+      <view class="bargain-info">
+        <view class="info-header">
+          <text class="title">{{item.title}}</text>
+          <text class='add-xq'>发布：信院团委   2018-11-25</text>
+          <text class="desc">{{item.desc}}</text>
+          <view class='zuixin-warning'>紧急</view>
+        </view>
+      </view>
+    </view>
+  </view>
